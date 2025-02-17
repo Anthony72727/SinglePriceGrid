@@ -52,12 +52,14 @@ h1{
     flex:1;
     background-color: hsl(179, 62%, 43%);
     color: hsl(204, 43%, 93%);
+    border-bottom-left-radius: 10px;
 }
 
 #why{
     flex:1;
-    background-color: hsl(352, 62%, 43%);
+    background-color: hsl(179, 47%, 52%);
     color: hsl(204, 43%, 93%);
+    border-bottom-right-radius: 10px;
 }
 
 button{
@@ -66,7 +68,7 @@ button{
     width: 100%;
     background-color: hsl(71, 73%, 54%);
     color: white;
-    border-radius: 10px;
+    border-radius: 6px;
     cursor: pointer;
     font-weight: bold;
     border: 0px;
@@ -80,7 +82,11 @@ button:hover{
     padding-bottom: 5%;
     padding-top: 2%;
     padding-left: 5%;
-    padding-right: 2%;
+    padding-right: 5%;
+}
+
+#access{
+    margin-bottom: 15px;
 }
 
 @media screen and (max-width: 600px) {
@@ -88,5 +94,15 @@ button:hover{
         flex-direction: column;
     }
 
+    #sub{
+        border-bottom-left-radius: 0px;
+    }
 
+    #why{
+        border-bottom-left-radius: 10px;
+    }
+
+    #mainContent{
+        width: 100%;
+    }
 }
